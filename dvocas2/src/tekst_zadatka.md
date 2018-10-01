@@ -48,12 +48,11 @@ Ako jesu u okviru granica, metoda na osnovu unetih parametara izračunava BMI po
 4. Metodu **postaviBMIStatus** koja uzima vrednost atributa **BMIVrednost** (npr. 20,02) i postavlja odgovarajuću BMI kategoriju u atribut **BMIStatus** i to prema sledećoj tabeli:
 
 	BMI Kategorija		BMI vrednost
-	Anoreksija 		BMI <= 15 
-	Mršavost 		15 < BMI <= 18.5 
-	Normalno 		18.5 < BMI <= 25
-	Popunjen		25 < BMI <= 30
-	Debeo 			30 < BMI <= 40
-	Gojazan		 	BMI > 40
+	Anoreksican 		BMI <= 15 
+	Mrsav 			15 < BMI <= 18.5 
+	Normalan 		18.5 < BMI <= 25
+	Debeo			25 < BMI <= 30
+	Gojazan			30 < BMI
 
 5. Metodu **ispisi** koja na ekranu ispisuje vrednosti atributa BMIVrednost i BMIStatus uz odgovarajuću poruku.
 

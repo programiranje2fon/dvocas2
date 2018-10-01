@@ -15,7 +15,7 @@ class BMIKalkulator {
 
 	void postaviBMIStatus() {
 		if (BMIVrednost <= 15)
-			BMIStatus = BMIKategorija.ANOREKSIJA;
+			BMIStatus = BMIKategorija.ANOREKSICAN;
 		else if (BMIVrednost <= 18.5)
 			BMIStatus = BMIKategorija.MRSAV;
 		else if (BMIVrednost <= 25)

@@ -9,8 +9,12 @@ public class PokreniTestove {
 	public static void main(String[] args) {
 
 		pokreniTestoveZaKlasu(zadatak1.AgregatnaStanjaTest.class);
-		
 
+		pokreniTestoveZaKlasu(zadatak1.KonvertorTemperatureTest.class);
+		
+		pokreniTestoveZaKlasu(zadatak2.BMIKategorijaTest.class);
+
+		pokreniTestoveZaKlasu(zadatak2.BMIKalkulatorTest.class);
 	}
 
 	@SuppressWarnings("rawtypes")
