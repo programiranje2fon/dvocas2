@@ -25,12 +25,12 @@ public class KonvertorTemperatureTest {
 
 	@Test
 	public void staticka_konstanta_apsolutnaNulaC() {
-		assertEquals("Vrednost konstante nije -273.15",-273.15,KonvertorTemperature.apsolutnaNulaC, 0.001);
+		assertEquals("Vrednost konstante nije -273.15",-273.15,KonvertorTemperature.APSOLUTNA_NULA_C, 0.001);
 	}
 	
 	@Test
 	public void staticka_konstanta_apsolutnaNulaF() {
-		assertEquals("Vrednost konstante nije -459.67",-459.67,KonvertorTemperature.apsolutnaNulaF, 0.001);
+		assertEquals("Vrednost konstante nije -459.67",-459.67,KonvertorTemperature.APSOLUTNA_NULA_F, 0.001);
 	}
 	
 	@Test

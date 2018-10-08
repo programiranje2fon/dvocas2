@@ -2,12 +2,12 @@ package zadatak1;
 
 class KonvertorTemperature {
 
-	static final double apsolutnaNulaC = -273.15;
+	static final double APSOLUTNA_NULA_C = -273.15;
 
-	static final double apsolutnaNulaF = -459.67;
+	static final double APSOLUTNA_NULA_F = -459.67;
 
 	double konvertujCUF(double tc) {
-		if (tc >= apsolutnaNulaC)
+		if (tc >= APSOLUTNA_NULA_C)
 			return tc * 9 / 5 + 32;
 		else {
 			System.out.println("GRESKA");
@@ -16,7 +16,7 @@ class KonvertorTemperature {
 	}
 
 	double konvertujFUC(double tf) {
-		if (tf >= apsolutnaNulaF)
+		if (tf >= APSOLUTNA_NULA_F)
 			return (tf - 32) * 5 / 9;
 
 		// Moze i ovako bez ELSE jer prethodni return prekida metodu.
