@@ -11,9 +11,9 @@ Napraviti nabrojivi tip **AgregatnaStanja** u paketu **zadatak1** koji ima slede
 
 Napraviti klasu **KonvertorTemperature** u paketu **zadatak1** koja ima:
 
-1. Statičku konstantu **apsolutnaNulaC** koja ima vrednost -273.15 **(STATIC, FINAL, statičke konstante)**
+1. Statičku konstantu **APSOLUTNA_NULA_C** koja ima vrednost -273.15 **(STATIC, FINAL, statičke konstante)**
 
-2. Statičku konstantu **apsolutnaNulaF** koja ima vrednost -459.67
+2. Statičku konstantu **APSOLUTNA_NULA_F** koja ima vrednost -459.67
 
 3. Metodu **konvertujCUF** koja kao parametar dobija iznos temperature u celzijusima (realan broj). Ova metoda proverava da li je uneta temperatura jednaka ili veća od apsolutne nule za celzijusovu skalu, i ako jeste, pretvara je u temperaturu izraženu u farenhajtima i vraća kao rezultat. Ako nije, metoda vraća vrednost -1000 ispisuje na ekranu "GRESKA". Konverzija se vrši po formuli **TF = TC*9/5 + 32** **(IF klauzula i operatori poređenja vrednosti, RETURN naredba i prekidanje izvršavanja metode)**
 
