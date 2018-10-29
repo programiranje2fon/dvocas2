@@ -1,6 +1,6 @@
 package zadatak1;
 
-class ProveraKonvertoraTemperature {
+class ProbaKonvertoraTemperature {
 
 	public static void main(String[] args) {
 		

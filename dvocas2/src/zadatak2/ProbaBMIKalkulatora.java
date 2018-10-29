@@ -1,6 +1,6 @@
 package zadatak2;
 
-class ProveraBMIKalkulatora {
+class ProbaBMIKalkulatora {
 
 	public static void main(String[] args) {
 		
