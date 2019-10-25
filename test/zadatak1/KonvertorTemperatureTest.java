@@ -45,53 +45,53 @@ public class KonvertorTemperatureTest {
 
 	@Test
 	public void metoda_konvertujCUF_Test1() {
-		assertEquals("Ako se unese 0 C, povratna vrednost nije 32", 32, instance.konvertujCUF(0), 0.001);
+		assertEquals("Ako se unese 0 C, povratna vrednost nije 32", 32, instance.konvertujUFarenhajte(0), 0.001);
 	}
 	
 	@Test
 	public void metoda_konvertujCUF_Test2() {
-		assertEquals("Ako se unese 5 C, povratna vrednost nije 41",41,instance.konvertujCUF(5), 0.001);
+		assertEquals("Ako se unese 5 C, povratna vrednost nije 41",41,instance.konvertujUFarenhajte(5), 0.001);
 	}
 	
 	@Test
 	public void metoda_konvertujCUF_TestGreska() {
-		double f = instance.konvertujCUF(-274);
+		double f = instance.konvertujUFarenhajte(-274);
 		
 		assertEquals("Ako se unese -274 C, povratna vrednost nije -1000",-1000, f, 0.001);
-		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().trim().equalsIgnoreCase("GRESKA"));
+		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().toLowerCase().contains("GRESKA".toLowerCase()));
 	}
 	
 	@Test
 	public void metoda_konvertujFUCTest1() {
-		assertEquals("Ako se unese 41 F, povratna vrednost nije 5", 5, instance.konvertujFUC(41), 0.001);
+		assertEquals("Ako se unese 41 F, povratna vrednost nije 5", 5, instance.konvertujUCelzjuse(41), 0.001);
 	}
 
 	@Test
 	public void metoda_konvertujFUC_Test2() {
-		assertEquals("Ako se unese 32 F, povratna vrednost nije 0", 0, instance.konvertujFUC(32), 0.001);
+		assertEquals("Ako se unese 32 F, povratna vrednost nije 0", 0, instance.konvertujUCelzjuse(32), 0.001);
 	}
 	
 	@Test
 	public void metoda_konvertujFUC_TestGreska() {
-		double c = instance.konvertujFUC(-460);
+		double c = instance.konvertujUCelzjuse(-460);
 		
 		assertEquals("Ako se unese -460 C, povratna vrednost nije -1000", -1000, c, 0.001);
-		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().trim().equalsIgnoreCase("GRESKA"));
+		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().toLowerCase().contains("GRESKA".toLowerCase()));
 	}
 	
 	@Test
 	public void metoda_vratiAgregatnoStanjeVode_CVRSTO() {
-		assertEquals("Ako se unese -0.5 C, povratna vrednost nije CVRSTO", AgregatnaStanja.CVRSTO, instance.vratiAgregatnoStanjeVode(-0.5));
+		assertEquals("Ako se unese -0.5 C, povratna vrednost nije CVRSTO", AgregatnoStanje.CVRSTO, instance.vratiAgregatnoStanjeVode(-0.5));
 	}
 
 	@Test
 	public void metoda_vratiAgregatnoStanjeVode_TECNO() {
-		assertEquals("Ako se unese 0 C, povratna vrednost nije TECNO", AgregatnaStanja.TECNO, instance.vratiAgregatnoStanjeVode(0));
+		assertEquals("Ako se unese 0 C, povratna vrednost nije TECNO", AgregatnoStanje.TECNO, instance.vratiAgregatnoStanjeVode(0));
 	}
 
 	@Test
 	public void metoda_vratiAgregatnoStanjeVode_GAS() {
-		assertEquals("Ako se unese 100 C, povratna vrednost nije GAS", AgregatnaStanja.GAS,	instance.vratiAgregatnoStanjeVode(100));
+		assertEquals("Ako se unese 100 C, povratna vrednost nije GAS", AgregatnoStanje.GAS,	instance.vratiAgregatnoStanjeVode(100));
 	}
 
 }

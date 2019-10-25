@@ -53,7 +53,7 @@ public class BMIKalkulatorTest {
 				0.0, instance.vrednost, 0.001);
 
 
-		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().trim().equalsIgnoreCase("GRESKA"));
+		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().toLowerCase().contains("GRESKA".toLowerCase()));
 	}
 
 	@Test
@@ -64,7 +64,7 @@ public class BMIKalkulatorTest {
 				0.0, instance.vrednost, 0.001);
 
 
-		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().trim().equalsIgnoreCase("GRESKA"));
+		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().toLowerCase().contains("GRESKA".toLowerCase()));
 	}
 
 	@Test
@@ -74,7 +74,7 @@ public class BMIKalkulatorTest {
 		assertEquals("Za unete 1.95m i 29.5kg, metoda postavlja atribut BMIVrednost, a ne treba jer je visina van granica",
 				0.0, instance.vrednost, 0.001);
 
-		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().trim().equalsIgnoreCase("GRESKA"));
+		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().toLowerCase().contains("GRESKA".toLowerCase()));
 	}
 
 	@Test
@@ -84,7 +84,7 @@ public class BMIKalkulatorTest {
 		assertEquals("Za unete 1.95m i 200.5kg, metoda postavlja atribut BMIVrednost, a ne treba jer je visina van granica",
 				0.0, instance.vrednost, 0.001);
 
-		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().trim().equalsIgnoreCase("GRESKA"));
+		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().toLowerCase().contains("GRESKA".toLowerCase()));
 	}
 
 	@Test

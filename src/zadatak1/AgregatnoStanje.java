@@ -1,6 +1,6 @@
 package zadatak1;
 
-enum AgregatnaStanja {
+enum AgregatnoStanje {
 	
 	CVRSTO, TECNO, GAS;
 
