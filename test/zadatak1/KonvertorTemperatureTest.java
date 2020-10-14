@@ -44,17 +44,17 @@ public class KonvertorTemperatureTest {
 	}
 
 	@Test
-	public void metoda_konvertujCUF_Test1() {
+	public void metoda_konvertujUFarenhajte_Test1() {
 		assertEquals("Ako se unese 0 C, povratna vrednost nije 32", 32, instance.konvertujUFarenhajte(0), 0.001);
 	}
 	
 	@Test
-	public void metoda_konvertujCUF_Test2() {
+	public void metoda_konvertujUFarenhajte_Test2() {
 		assertEquals("Ako se unese 5 C, povratna vrednost nije 41",41,instance.konvertujUFarenhajte(5), 0.001);
 	}
 	
 	@Test
-	public void metoda_konvertujCUF_TestGreska() {
+	public void metoda_konvertujUFarenhajte_TestGreska() {
 		double f = instance.konvertujUFarenhajte(-274);
 		
 		assertEquals("Ako se unese -274 C, povratna vrednost nije -1000",-1000, f, 0.001);
@@ -62,18 +62,18 @@ public class KonvertorTemperatureTest {
 	}
 	
 	@Test
-	public void metoda_konvertujFUCTest1() {
-		assertEquals("Ako se unese 41 F, povratna vrednost nije 5", 5, instance.konvertujUCelzjuse(41), 0.001);
+	public void metoda_konvertujUCelzijuseTest1() {
+		assertEquals("Ako se unese 41 F, povratna vrednost nije 5", 5, instance.konvertujUCelzijuse(41), 0.001);
 	}
 
 	@Test
-	public void metoda_konvertujFUC_Test2() {
-		assertEquals("Ako se unese 32 F, povratna vrednost nije 0", 0, instance.konvertujUCelzjuse(32), 0.001);
+	public void metoda_konvertujUCelzijuse_Test2() {
+		assertEquals("Ako se unese 32 F, povratna vrednost nije 0", 0, instance.konvertujUCelzijuse(32), 0.001);
 	}
 	
 	@Test
-	public void metoda_konvertujFUC_TestGreska() {
-		double c = instance.konvertujUCelzjuse(-460);
+	public void metoda_konvertujUCelzijuse_TestGreska() {
+		double c = instance.konvertujUCelzijuse(-460);
 		
 		assertEquals("Ako se unese -460 C, povratna vrednost nije -1000", -1000, c, 0.001);
 		assertTrue("NE ispisuje se rec GRESKA u slucaju greske", outContent.toString().toLowerCase().contains("GRESKA".toLowerCase()));

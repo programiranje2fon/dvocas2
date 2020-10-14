@@ -10,7 +10,7 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-import zadatak1.AgregatnaStanjaTest;
+import zadatak1.AgregatnoStanjeTest;
 import zadatak1.KonvertorTemperatureTest;
 import zadatak2.BMIKalkulatorTest;
 import zadatak2.BMIKategorijaTest;
@@ -22,7 +22,7 @@ import zadatak2.BMIKategorijaTest;
 public class PokreniTestove {
 
 	public static void main(String[] args) {
-		runTestsForClass(AgregatnaStanjaTest.class);
+		runTestsForClass(AgregatnoStanjeTest.class);
 		runTestsForClass(KonvertorTemperatureTest.class);
 		runTestsForClass(BMIKategorijaTest.class);
 		runTestsForClass(BMIKalkulatorTest.class);

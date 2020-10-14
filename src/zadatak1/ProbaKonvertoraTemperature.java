@@ -9,7 +9,7 @@ class ProbaKonvertoraTemperature {
 		double tempFarenhajti = kt.konvertujUFarenhajte(0);
 		System.out.println("Temperatura u farenhajtima: " + tempFarenhajti + "F");
 
-		double tempCelzjusi = kt.konvertujUCelzjuse(0);
+		double tempCelzjusi = kt.konvertujUCelzijuse(0);
 		System.out.println("Temperatura u celzijusima: " + tempCelzjusi + "C");
 		
 		System.out.println("Agregatno stanje vode na 13C je: " + kt.vratiAgregatnoStanjeVode(13));

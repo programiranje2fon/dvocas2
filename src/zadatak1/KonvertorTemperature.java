@@ -15,7 +15,7 @@ class KonvertorTemperature {
 		}
 	}
 
-	double konvertujUCelzjuse(double farenhajti) {
+	double konvertujUCelzijuse(double farenhajti) {
 		if (farenhajti >= APSOLUTNA_NULA_F)
 			return (farenhajti - 32) * 5 / 9;
 

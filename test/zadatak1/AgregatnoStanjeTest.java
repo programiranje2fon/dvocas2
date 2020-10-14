@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class AgregatnaStanjaTest {
+public class AgregatnoStanjeTest {
 
 	@Test
 	public void enum_CVRSTO() {
