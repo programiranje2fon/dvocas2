@@ -2,12 +2,12 @@ package zadatak1;
 
 class KonvertorTemperature {
 
-	static final double APSOLUTNA_NULA_C = -273.15;
+	double apsolutnaNulaC = -273.15;
 
-	static final double APSOLUTNA_NULA_F = -459.67;
+	double apsolutnaNulaF = -459.67;
 
 	double konvertujUFarenhajte(double celzjusi) {
-		if (celzjusi >= APSOLUTNA_NULA_C)
+		if (celzjusi >= apsolutnaNulaC)
 			return celzjusi * 9 / 5 + 32;
 		else {
 			System.out.println("GRESKA!!");
@@ -16,7 +16,7 @@ class KonvertorTemperature {
 	}
 
 	double konvertujUCelzijuse(double farenhajti) {
-		if (farenhajti >= APSOLUTNA_NULA_F)
+		if (farenhajti >= apsolutnaNulaF)
 			return (farenhajti - 32) * 5 / 9;
 
 		// Moze i ovako bez ELSE jer prethodni return prekida metodu.

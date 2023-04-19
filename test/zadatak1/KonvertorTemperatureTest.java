@@ -34,13 +34,13 @@ public class KonvertorTemperatureTest {
 	}
 
 	@Test
-	public void konstanta_apsolutnaNulaC() {
-		assertEquals("Vrednost konstante nije -273.15", -273.15, KonvertorTemperature.APSOLUTNA_NULA_C, 0.001);
+	public void atribut_apsolutnaNulaC() {
+		assertEquals("Vrednost atributa nije -273.15", -273.15, instance.apsolutnaNulaC, 0.001);
 	}
 	
 	@Test
-	public void konstanta_apsolutnaNulaF() {
-		assertEquals("Vrednost konstante nije -459.67", -459.67, KonvertorTemperature.APSOLUTNA_NULA_F, 0.001);
+	public void atribut_apsolutnaNulaF() {
+		assertEquals("Vrednost atributa nije -459.67", -459.67, instance.apsolutnaNulaF, 0.001);
 	}
 
 	@Test
