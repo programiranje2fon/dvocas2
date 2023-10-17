@@ -27,7 +27,7 @@ class KonvertorTemperature {
 	AgregatnoStanje vratiAgregatnoStanjeVode(double tc) {
 		if (tc < 0)
 			return AgregatnoStanje.CVRSTO;
-		else if (tc >= 0 && tc < 100)
+		else if (tc < 100)
 			return AgregatnoStanje.TECNO;
 		else
 			return AgregatnoStanje.GAS;
